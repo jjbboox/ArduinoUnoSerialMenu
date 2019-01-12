@@ -1,6 +1,6 @@
 # ArduinoUnoSerialMenu
 
-#Simple serial menu example
+Simple serial menu example
 
 Customizable menu items, support submenus
 
