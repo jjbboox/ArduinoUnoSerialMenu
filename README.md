@@ -1,7 +1,7 @@
 # ArduinoUnoSerialMenu
 
 Simple serial menu example
-Customizable menu items, submenus
+Customizable menu items, support submenus
 Each menu item is called by a callback function
 
 简单的串口菜单实例
