@@ -53,10 +53,8 @@ void menu_loop() {
 }
 
 MenuObj * doMenuById(SubMenu* &submenu, String _id) {
-	// MenuObj **obj_list = submenu->getItemList();
-	// uint8_t objs = submenu->getLength();
-
-	if (_id == "bk" || _id == "back") {
+	if (_id.equalsIgnoreCase("bk") ||
+			_id.equalsIgnoreCase("back") {
 		if (submenu->getParent() != NULL) {
 			submenu = submenu->getParent();
       Serial.println("返回上层菜单：<" + submenu->getName() + ">");
