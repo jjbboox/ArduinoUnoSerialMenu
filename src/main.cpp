@@ -1,4 +1,4 @@
-// ConsoleApplication1.cpp : 此文件包含 "main" 函数。程序执行将在此处开始并结束。
+// main.cpp : 此文件包含 "main" 函数。程序执行将在此处开始并结束。
 //
 
 #include <Arduino.h>
@@ -7,9 +7,13 @@
 
 using namespace std;
 
+// 导入主菜单对象
 extern SubMenu root;
+// 当前菜单（初期值：根）
 SubMenu * currentMenu = &root;
+
 MenuObj * doMenuById(SubMenu* &submenu, String _id);
+void menu_loop();
 
 void setup()
 {
@@ -21,8 +25,6 @@ void setup()
 
 	root.printSubMenuTree();
 }
-
-void menu_loop();
 
 void loop() {
 	menu_loop();
