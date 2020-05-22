@@ -51,4 +51,3 @@ Arduino重新启动后显示整个菜单树
 
 ![image](https://github.com/jjbboox/ArduinoUnoSerialMenu/blob/master/img/BackToParentMenu.png)
 
-我修改了readme
